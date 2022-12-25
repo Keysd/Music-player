@@ -4,7 +4,7 @@
     --active-color: #42b6b6;
     --button-color: #4bc8c8;
     --text-content: #a5cbcb;
-    --active: #41a3a3;
+    --active: #3c7878;
     --bg-color: linear-gradient(45deg, #4fc0e8, #49cdb7);
 }
 
@@ -18,8 +18,8 @@
 
 body {
     height: 100vh;
-    background: url(/assets/img/img-background.webp) no-repeat;
-    background-size: cover;
+    /* background: url(/assets/img/img-background.webp) no-repeat;
+    background-size: cover; */
     color: var(--color-white);
     display: flex;
     justify-content: center;
@@ -138,10 +138,10 @@ body {
     transition: all 0.5s;
 }
 
-.ctrl__btn .btn:hover {
+/* .ctrl__btn .btn:hover {
     transform: scale(1.4);
     color: var(--active);
-}
+} */
 
 #icon-pause {
     display: none;
@@ -312,4 +312,11 @@ body {
 ::-webkit-scrollbar-thumb {
     background-color: var(--active-color);
     border-radius: 1rem;
+}
+
+@media screen and (min-width: 1024px) {
+    .ctrl__btn .btn:hover {
+        transform: scale(1.4);
+        color: var(--active);
+    }
 }
