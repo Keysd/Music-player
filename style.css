@@ -316,7 +316,7 @@ body {
 
 @media screen and (min-width: 1024px) {
     .ctrl__btn .btn:hover {
-        transform: scale(1.4);
+        transform: scale(1.42);
         color: var(--active);
     }
 }

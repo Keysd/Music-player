@@ -221,9 +221,7 @@ const app = {
                 progressBar.value = progressPercent;
             }
 
-            // Trả về số phút hiện tại của audio/video
             let currentMinutes = Math.floor(audio.currentTime / 60);
-            // Trả về số giây hiện tại của audio/video
             let currentSeconds = Math.floor(audio.currentTime - currentMinutes * 60);
 
             if (currentMinutes < 10) {
@@ -239,9 +237,7 @@ const app = {
 
         /* ========== Hiển thị thời gian bài hát ========== */
         audio.addEventListener('loadedmetadata', function () {
-            // Trả về số phút của audio/video
             let durationMinutes = Math.floor(audio.duration / 60);
-            // Trả về số giây của audio/video
             let durationSeconds = Math.floor(audio.duration - durationMinutes * 60);
 
             if (durationMinutes < 10) {
@@ -364,8 +360,6 @@ const app = {
                     listSong[oldCurrentIndex].classList.remove('active');
                     listSong[_this.currentIndex].classList.add('active');
                 }
-
-                // Xử lý khi ấn vào option
             }
         });
     },
