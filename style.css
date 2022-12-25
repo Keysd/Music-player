@@ -40,10 +40,6 @@ body {
     color: var(--active);
 }
 
-/* .btn-header.active{
-    color: var(--active-color);
-} */
-/* ========== BACKGROUND ========== */
 .app-music {
     display: flex;
     align-items: center;
@@ -53,7 +49,6 @@ body {
     border-radius: 1.5rem;
 }
 
-/* ========== MUSIC HEADER ========== */
 .music__header {
     width: 100%;
     padding: 2.4rem;
@@ -80,7 +75,7 @@ body {
     color: var(--color-white);
     font-size: 2rem;
 }
-/* ========== DASHBOARD ========== */
+
 .music__dashboard {
     padding: 2rem 2.4rem 0 2.4rem;
     background-color: var(--color-white);
@@ -92,7 +87,6 @@ body {
     transition: all 0.5s ease;
 }
 
-/* ========== TITLE ========== */
 .title {
     text-align: center;
 }
@@ -107,7 +101,6 @@ body {
     color: var(--text-content);
 }
 
-/* ========== CD ========== */
 .cd {
     margin-top: 2.4rem;
     margin-bottom: 1rem;
@@ -126,7 +119,6 @@ body {
     background-size: cover;
 }
 
-/* ========== CONTROL ========== */
 .control {
     display: flex;
     flex-direction: column;
@@ -163,7 +155,6 @@ body {
     display: none;
 }
 
-/* ========== PROGRESS BAR / VOLUME BAR ========== */
 .ctrl__progress--value {
     width: 100%;
 }
@@ -201,10 +192,13 @@ body {
     margin-top: 1rem;
     display: flex;
     justify-content: space-between;
-    font-size: 2rem;
-    font-weight: 500;
     align-items: center;
     color: var(--primary-color);
+}
+
+.ctrl__progress-time div {
+    font-size: 2rem;
+    font-weight: 500;
 }
 
 .ctrl__volume {
@@ -230,8 +224,6 @@ body {
     display: none;
 }
 
-/* ========== PLAYLIST ========== */
-/* .music__playlist.non-active, */
 .music__dashboard.non-active {
     animation: none !important;
     opacity: 0;
@@ -247,7 +239,6 @@ body {
 
 .music__playlist {
     position: absolute;
-    /* opacity: 0; */
     width: 100%;
     height: 100%;
     top: 0;
@@ -261,8 +252,6 @@ body {
     align-items: center;
     justify-content: space-around;
     padding: 1rem 2rem;
-    /* margin-left: 3rem;
-    padding: 0.5rem 3rem 0.5rem 1rem; */
     box-shadow: 0px 1px 2px 0px var(--active-color);
     cursor: pointer;
     z-index: 1;
@@ -272,9 +261,6 @@ body {
 .playlist__song.active {
     background-color: var(--active-color);
 }
-/* .playlist__song:active {
-    opacity: 0.6;
-} */
 
 .song__thumb {
     width: 4rem;
@@ -314,18 +300,15 @@ body {
     color: var(--color-white);
 }
 
-/* SCROLL BAR */
 ::-webkit-scrollbar {
     width: 1rem;
 }
 
-/* PLAYLIST */
 ::-webkit-scrollbar-track {
     border-radius: 1rem;
     background: #d2c4f2;
 }
 
-/* HANDLE */
 ::-webkit-scrollbar-thumb {
     background-color: var(--active-color);
     border-radius: 1rem;
