@@ -234,7 +234,7 @@ const app = {
                 currentSeconds = `0${currentSeconds}`;
             }
 
-            timeCurrent.innerText = `${currentMinutes}:${currentSeconds}`;
+            timeCurrent.textContent = `${currentMinutes}:${currentSeconds}`;
         });
 
         /* ========== Hiển thị thời gian bài hát ========== */
@@ -252,7 +252,7 @@ const app = {
                 durationSeconds = `0${durationSeconds}`;
             }
 
-            timeDuration.innerText = `${durationMinutes}:${durationSeconds}`;
+            timeDuration.textContent = `${durationMinutes}:${durationSeconds}`;
         });
 
         // Xử lý khi tua bài hát
